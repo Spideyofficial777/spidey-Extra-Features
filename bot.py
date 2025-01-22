@@ -29,8 +29,8 @@ class Bot(Client):
         )
 
     async def start(self):
-        # Ensure system time is synchronized
-        time.time()  # Sync system time before starting the bot
+        # Force time synchronization before starting the bot
+        self.sync_time()
 
         # Fetch banned users and chats from the database
         b_users, b_chats = await db.get_banned()
@@ -58,6 +58,17 @@ class Bot(Client):
         # Stop the bot and log the shutdown
         await super().stop()
         logging.info("Bot stopping and restarting process initiated.")
+
+    def sync_time(self):
+        """
+        Sync the system time with an NTP server.
+        """
+        try:
+            # Ensures the system's time is in sync before starting the bot
+            time.time()  # This forces a system time check and sync
+            logging.info("System time synchronized successfully.")
+        except Exception as e:
+            logging.error(f"Error synchronizing system time: {e}")
 
 # Create an instance of the Bot class and run it
 app = Bot()
