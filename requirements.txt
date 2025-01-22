@@ -3,9 +3,9 @@ git+https://github.com/subinps/pyrogram@inline-m
 tgcrypto
 
 # Database dependencies
-pymongo[srv]>=4.0  # MongoDB driver
-motor>=3.0         # Async MongoDB support
-umongo>=3.0.0      # MongoDB ORM
+pymongo[srv]>=4.0
+motor>=3.0
+umongo>=3.0.0
 
 # Telegram API and utilities
 python-telegram-bot>=20.0
@@ -15,37 +15,37 @@ Pyromod
 requests
 beautifulsoup4
 aiohttp>=3.8.0
-googletrans==4.0.0rc1  # Updated version for Google Translate
+deep-translator>=1.10.0  # Replaces googletrans
 
 # Multimedia handling
-Pillow              # Image processing
-opencv-python-headless  # OpenCV without GUI dependencies
-yt-dlp             # Modern YouTube downloader
-youtube-search-python==1.4.6  # Python-based YouTube search
-gTTS               # Google Text-to-Speech
-ffmpeg-python      # FFmpeg wrapper for Python
-pypng              # PNG file support
-ytthumb            # YouTube thumbnail utilities
+Pillow
+opencv-python-headless
+yt-dlp
+youtube-search-python==1.4.6
+gTTS
+ffmpeg-python
+pypng
+ytthumb
 
 # Utilities and performance
-wheel              # Python wheels
-humanize           # Human-readable numbers
-psutil             # System and process utilities
-ujson              # Fast JSON parser
-python-dotenv      # Environment variable management
-asyncio            # Async operations
+wheel
+humanize
+psutil
+ujson
+python-dotenv
+asyncio
 
 # PDF and file handling
-PyPDF2             # PDF handling
-aiofiles           # Asynchronous file handling
-wget               # File download utility
+PyPDF2
+aiofiles
+wget
 
 # Miscellaneous tools
-marshmallow>=3.19.0  # Data serialization and validation
-glitch_this         # Image glitch effects
-pyshorteners        # URL shortener
-search_engine_parser  # Search engine API
-telegraph          # Telegra.ph API wrapper
+marshmallow>=3.19.0
+glitch_this
+pyshorteners
+search_engine_parser
+telegraph
 
 # Cinemagoer (IMDb support)
 git+https://github.com/cinemagoer/cinemagoer
